@@ -282,7 +282,7 @@ function generateSQLStatments(path, files) {
                     duration = millisecondsToTime(item.videoMediaMetadata.durationMillis);
                 }
 
-                statment="INSERT INTO `videos`(`playlist_id`, `user_id`, `name`, `description`, `url`, `duration`, `type`, `thumbnail`, `created_at`, `updated_at`, `featured`, `draft`, `downloads`, `views`) VALUES ("+playlist_id+","+user_id+",'"+name+"','Watch "+name+" from barf entertainment app.','"+p+"','"+duration+"',1,'"+thumbnail+"','"+datetime+"','"+datetime+"',0,"+draft+",0,0);";
+                statment="INSERT INTO `videos`(`playlist_id`, `user_id`, `name`, `description`, `url`, `duration`, `type`, `thumbnail`, `created_at`, `updated_at`, `featured`, `draft`, `downloads`, `views`) VALUES ("+playlist_id+","+user_id+",'"+name+"','Watch "+name+" from your favorite entertainment app.','"+p+"','"+duration+"',1,'"+thumbnail+"','"+datetime+"','"+datetime+"',0,"+draft+",0,0);";
 
                 statments += statment;
 
