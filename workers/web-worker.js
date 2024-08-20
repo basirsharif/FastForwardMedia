@@ -136,6 +136,9 @@ function init() {
 
 function setSelectedBucket(bucket){
   window.selectedBucket=bucket;
+  $('#dropdownMenuFolders').html(bucket);
+  $('#output').text('');
+  $('#output_html').html('');
 }
 
 function generateScripts(path){
