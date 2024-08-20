@@ -137,8 +137,12 @@ function init() {
 function setSelectedBucket(bucket){
   window.selectedBucket=bucket;
   $('#dropdownMenuFolders').html(bucket);
+
   $('#output').text('');
   $('#output_html').html('');
+
+  $('#playlist_id').val('');
+  $('#thumbnail').val('');
 }
 
 function generateScripts(path){
